@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TADOW STORE</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap" rel="stylesheet">
+
+    <link rel = "icon" href =
+        "https://www.tadowstore.com/wp-content/uploads/2022/11/eyes-2048x1972.png"
+    type = "image/x-icon">
+</head>
+<body>
+    <div class="box" >
+        <img src="img/goTop.png" id="go-top" alt="">
+        <header>
+            <div class="logo">
+                <img src="img/logoTadow.png" alt="">
+                <div class="textLogo">
+                    <h1>tadow store</h1>
+                    <p>ukrainian clothing brand</p>
+                </div>
+            </div>
+            <nav>
+                <a href="#" class="nav_item1">Tadow Store</a>
+                <a href="#" class="nav_item1">Покупцям</a>
+                <a href="#" class="nav_item1">Корисно</a>
+                <a href="#" class="nav_item1">Є запитання?</a>
+            </nav>
+            <div class="header_img_box">
+                <div class="header_image"></div>
+            </div>
+            <div class="header_list_box">
+                <h2>нова колекція</h2>
+                <div class="header_list header_item_first" onclick="fun1()">
+                    <h3 class="header_text_first">Плюш-худі “jzo”</h3>
+                    <p class="header_text_first">
+                        Плюш-худі оверсайз-крою <br>
+                        Плюш двухсторонній, 350г/м2 <br>
+                        Вишивка
+                    </p>
+                </div>
+                <div class="header_list header_item_second" onclick="fun2()">
+                    <h3 class="header_text_second">Лонгслів “wimm”</h3>
+                    <p class="header_text_second">
+                        Тканина: стрейч-кулір, 280 г/м2 щільність, 95% бавовна 5% лайкра <br>
+                        Прінти: Ворсова шовкографія + елементи малюнка з ефектом «мокрий асфальт» <br>
+                        Повноцінний подвійний рукав
+                    </p>
+                </div>
+                <div class="header_list header_item_third" onclick="fun3()">
+                    <h3 class="header_text_third">Лонгслів “i’m real”</h3>
+                    <p class="header_text_third">
+                        Лонгслів оверсайз кроя<br>
+                        Тканина: стрейч-кулір, 220 г/м2 щільність, 95% бавовна 5% лайкра <br>
+                        Прінти: шовкографія на спині, спереді ворсова шовкографія 
+                    </p>
+                </div>
+            </div> 
+            <div class="header_view">
+                <img id="logoButton" src="img/downWhite.png" alt="" >
+            </div> 
+        </header>
+        <main>
+            <section class="goods">
+                <h1>в наявності</h1>
+                <div class="cart">
+                    <img src="img/longCvr.png" alt="">
+                    <h3>Лонгслів “cvx”</h3>
+                    <p class="first_count">0</p>
+                    <input type="button" value="buy" class="cart_button" onclick="fun4()">
+                </div>
+                <div class="cart">
+                    <img src="img/longCursed.png" alt="">
+                    <h3>Лонгслів “tears everywhere”</h3>
+                    <p class="second_count">0</p>
+                    <input type="button" value="buy" class="cart_button" onclick="fun5()">
+                </div>
+                <div class="cart">
+                    <img src="img/longImAReal.png" alt="">
+                    <h3>Лонгслів “real ?”</h3>
+                    <p class="third_count">0</p>
+                    <input type="button" value="buy" class="cart_button" onclick="fun6()">
+                </div>
+            </section>
+            <section class="shipping_payment">
+                <h1>інше</h1>
+                <div class="shipping_payment_box">
+                    <div class="items " onclick="fun7()">
+                        <h3>Худі “maybe”</h3>
+                        <img src="img/downBlack.png" alt="">
+                    </div>
+                    <div class="details details1">
+                        <b>Тканина</b>: футер тринитка 400г/м2, висока щільність <br>
+                        <b>Склад</b>: 90% бавовна 10% поліестер <br>
+                        <b>Принт</b>: шовкографія</div>
+                    <div class="items" onclick="fun8()">
+                        <h3>Шарф “rbw”</h3>
+                        <img src="img/downBlack.png" alt="">
+                    </div>
+                    <div class="details details2">
+                        180х25 см <br>
+                        <b>Матеріал</b>: 80% акрил/20 поліестер</div>
+                    <div class="items" onclick="fun9()">
+                        <h3>Худі “I”</h3>
+                        <img src="img/downBlack.png" alt="">
+                    </div>
+                    <div class="details details3">
+                       <b>Тканина</b>: футер тринитка 400г/м2, висока щільність <br>
+                       <b>Склад</b>: 90% бавовна 5% поліестер <br>
+                        <b>Принт</b>: шовкографія</div>     
+                    <div class="items" onclick="fun10()">
+                        <h3>Коврик для пк “wimm”</h3>
+                        <img src="img/downBlack.png" alt="">
+                    </div>
+                    <div class="details details4">
+                        Коврик для пк 90х40 см <br>
+                        <b>Тип поверхні</b>: «speed» <br>
+                        Чорна окантовка 
+                    </div>                    
+                </div>
+                <div class="shipping_image"></div>
+                
+            </section>
+            <footer>
+                <a href="https://www.instagram.com/tadow_store/?hl=ru">@tadowstore в Інстаграм</a>
+                <p>Copyright 2022 © <b>Tadow Store</b>. Всі права захищено. Копіювання заборонено. Розроблено студією <b>Все красиво</b>.</p>
+            </footer>
+        </main>
+    </div>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
